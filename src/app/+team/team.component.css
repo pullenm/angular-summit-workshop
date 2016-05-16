@@ -1,0 +1,6 @@
+:host{
+  display: inline-block;
+  border: solid 5px black;
+  min-width: 500px;
+  margin-top: 10px;
+}

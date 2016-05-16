@@ -12,3 +12,16 @@
 #title{
   display: inline-block;
 }
+
+a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.router-link-active{
+  color:red;
+}
+
+.router-link-visited{
+  color: black;
+}
