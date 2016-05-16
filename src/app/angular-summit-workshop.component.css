@@ -1,5 +1,14 @@
 #linkbar{
   border: solid black 5px;
+  display: inline-block;
+  max-width: 500px;
+  min-width: 200px;
 }
 
+#wrapper{
+  text-align: center;
+}
 
+#title{
+  display: inline-block;
+}

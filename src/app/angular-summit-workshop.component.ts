@@ -3,8 +3,7 @@ import { HomeComponent } from './+home';
 import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
 import { TeamComponent } from './+team';
 import { DetailComponent } from './+detail';
-
-
+import { TeamService } from './shared'
 
 @Component({
   moduleId: module.id,
@@ -12,7 +11,7 @@ import { DetailComponent } from './+detail';
   templateUrl: 'angular-summit-workshop.component.html',
   styleUrls: ['angular-summit-workshop.component.css'],
   directives: [ROUTER_DIRECTIVES],
-  providers: [ROUTER_PROVIDERS]
+  providers: [ROUTER_PROVIDERS,TeamService]
 })
 @Routes([
   {path: '/', component: HomeComponent},
@@ -21,5 +20,5 @@ import { DetailComponent } from './+detail';
   {path: '/detail/:id', component: DetailComponent}
 ])
 export class AngularSummitWorkshopAppComponent {
-  title = 'angular-summit-workshop works!';
+  title = 'Angular Summit Workshop!';
 }

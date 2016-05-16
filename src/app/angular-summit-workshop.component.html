@@ -1,11 +1,14 @@
-<h1>
-  {{title}}
-</h1>
-<div id="colorbar"></div>
-<div id="linkbar">
-  <a [routerLink] = "['/home']">Home</a>
-  <a [routerLink] = "['/team']">Team</a>
-  <a [routerLink] = "['/detail', 1]">Detail</a>
+<div id="wrapper">
+  <div id="title">
+    <h1>
+      {{title}}
+    </h1>
+  </div>
+  <br/>
+  <div id="linkbar">
+    <a [routerLink]="['/home']">Home</a>
+    <a [routerLink]="['/team']">Team</a>
+    <a [routerLink]="['/detail', 1]">Detail</a>
+  </div>
 </div>
-<div id="colorbar"></div>
 <router-outlet></router-outlet>
